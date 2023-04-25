@@ -123,5 +123,10 @@ dataSet = (US, edu) => {
     .attr("y", (d, i) => h / 1.299 * scaleChecker + (Ppadding * 7.77 * checker) - xScale(i * 10) * scaleChecker)
     .attr("fill", x => x)
 
-  legendContainer.append("g").attr("transform", "translate(" + (paddingMD * scaleChecker * 20 + h / 5.25 * checker) + "," + ((scaleChecker * h / 3) + (Ppadding * 8 * checker)) + ")").call(xAxis).attr("id", "legend")
+  legendContainer
+  .append("g")
+  .attr("transform", "translate("
+  + (paddingMD * scaleChecker * 20 + h / 5.25 * checker)
+  + "," + ((scaleChecker * h / 3) + (Ppadding * 8 * checker))
+  + ")").call(xAxis).attr("id", "legend")
 }
