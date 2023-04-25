@@ -1,5 +1,5 @@
 # choropleth-map
-This is a demonstration of the usage of D3.js on making a chloropleth map
+This is a demonstration of the usage of D3.js on making a choropleth map
 
 -----
 Screenshot for running program:
