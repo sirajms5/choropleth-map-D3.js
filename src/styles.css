@@ -1,0 +1,56 @@
+body {
+    background-image: linear-gradient( 180.5deg,  rgba(46,255,171,1) 12.3%, rgba(252,251,222,0.46) 92% );
+    background-attachment: fixed;
+  }
+  
+  #master {
+    text-align: center;
+  }
+  
+  .county {
+    transform: translatex(3.5%) scalex(1.2);
+    stroke: black;
+    stroke-width: 0.2;
+  }
+  
+  .county:hover {
+    opacity: 0.9;
+  }
+  
+  .states {
+    transform: translatex(3.5%) scalex(1.2);
+    fill: none;
+    stroke: white;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  
+  #tooltip {
+    background: rgba(0, 206, 233, 0.7);
+    position: absolute;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px black
+  }
+  
+  @media (max-width: 800px){
+    body {
+      width: 710px;
+    }
+    
+    #master {
+      text-align: left;
+    }
+    
+    .county{
+      transform: translatex(0%) scale(0.7);
+    }
+    
+    .states {
+      transform: translatex(0%) scale(0.7)
+    }
+    
+    #legend {
+      font-size: 7px
+    }
+  }
