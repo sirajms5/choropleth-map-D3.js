@@ -127,6 +127,7 @@ dataSet = (US, edu) => {
   .append("g")
   .attr("transform", "translate("
   + (paddingMD * scaleChecker * 20 + h / 5.25 * checker)
-  + "," + ((scaleChecker * h / 3) + (Ppadding * 8 * checker))
+  + "," 
+  + ((scaleChecker * h / 3) + (Ppadding * 8 * checker))
   + ")").call(xAxis).attr("id", "legend")
 }
